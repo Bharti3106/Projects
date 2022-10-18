@@ -1,7 +1,7 @@
 <?php
     session_start();
     require 'connection.php';    
-    $user_products_query="select * from reviews where review_text='good' or review_text='bad'";
+    $user_products_query="select * from reviews where review_text='good' or review_text='bad' or review_text= 'not bad' or review_text='not good'";
     $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
     $no_of_user_products= mysqli_num_rows($user_products_result);
 ?>

@@ -54,7 +54,7 @@ body {
   <a href="admin-review.php">All Reviews</a>
   <a href="15-less-review.php">Fake Reviews( Less than 15 words)</a>
   <a href="common-reviews.php">Common Reviews</a>
-  <a href="multiple-single-user-review.php">Greater then 5 Reviews by same User</a>
+ 
 
 </div>
 </body>

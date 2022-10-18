@@ -10,6 +10,7 @@
     $user_products_query="select it.id,it.name,it.price from users_items ut inner join items it on it.id=ut.item_id where ut.user_id='$USER_ITEMS' and ut.item_id ='$item_id'";
     $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
     $no_of_user_products= mysqli_num_rows($user_products_result);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,6 +34,12 @@
          font-weight : bold;
         }
         </style>
+        <script>
+        function myfunction()
+        {
+        alert("Your reveiw is Added");
+        }
+            </script>
         
     </head>
     <body>
@@ -70,10 +77,11 @@
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="review" placeholder="text" >
                                     </div>
-                                    
+                                    <p> Note- Review should be greater than 15 words. Otherwise It will be counted as a fake review.So take care of this.<p>
                                     <div class="form-group">
-                                        <input type="submit" value="Add" name ="SubmitButton" class="btn btn-primary">
+                                        <input type="submit" value="Add" name ="SubmitButton" class="btn btn-primary" onclick ="myfunction()">
                                     </div>
+                                    
                                 </form>
                             </div>
                     </div>

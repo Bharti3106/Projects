@@ -47,7 +47,7 @@
                             <th><?php echo $row['Item_name']?></th>
                             <th><?php echo $row['price']?></th>
 
-                            <th><a href='ADD_reviews.php?id=<?php echo $row['id'] ?>'>Delete</a></th>
+                            <th><a href='admin_review_delete.php?id=<?php echo $row['id'] ?>'>Delete</a></th>
 
 
                         </tr>
